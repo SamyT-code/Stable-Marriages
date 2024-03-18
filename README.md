@@ -11,18 +11,18 @@ Clustering is done with the [DBSCAN algorithm](https://en.wikipedia.org/wiki/DBS
 
 ## Implementation
 The project is implemented in four programming languages and paradigms where each implementation is specific to the language and paradigm's purpose: 
-  - [Objected-oriented (Java)](Java)
+  - [Objected-oriented (Java)](https://github.com/SamyT-code/Stable-Marriages)
     - The DBSCAN algorithm is fully implemented and clusters the dataset procedurally (dataset contains 21,232 points)
     - This OOP version gives a general overview of the project before proceeding to the next version
-  - [Concurrent (Golang)](Golang)
+  - [Concurrent (Golang)](https://github.com/SamyT-code/DBSCAN-Go)
     - Partition the dataset then run DBSCAN concurrently on each partition using the producer-consumer pattern and thread pools
     - This version splits the dataset into smaller partitions and clusters each partition concurrently
     - Utilizes the maximum CPU capacity in order to cluster large datasets faster (dataset contains 232,051 points)
-  - [Logical (Prolog)](Prolog)
+  - [Logical (Prolog)](https://github.com/SamyT-code/DBSCAN-Prolog)
     - This version merges the clustered dataset from each partition (includes removing overlapping points) using the MapReduce pattern
     - Programmed declaratively and logically; mainly involves tail-recursion
 <!--     - Performs the merging step of the MapReduce pattern on cluster partitions produced by the concurrent version -->
-  - [Functional (Scheme)](Scheme)
+  - [Functional (Scheme)](https://github.com/SamyT-code/DBSCAN-Scheme)
     - This version merges the clustered dataset from each partition (includes removing overlapping points) using the MapReduce pattern
     - Programmed functionally; mainly involves tail-recursion
 <!--     - Performs the merging step of the MapReduce pattern on cluster partitions produced by the concurrent version -->
@@ -78,7 +78,7 @@ RangeQuery(DB, distFunc, Q, eps) {
 ## Dataset
 The dataset is taken from NYC's 2009 taxi database that recorded taxi trips spanning a certain timeframe on January 15, 2009. The dataset is contained in a CSV file, with each line corresponding to a trip record and the columns representing the relevant attributes of each trip. Since we want to identify the best waiting areas, we are interested in the starting points. As such, the dataset includes the GPS coordinates of the start and end point for each taxi trip.
 
-The image below is an example of a visualization of the plotted GPS coordinates of the NYC taxi dataset from the [Java](Java) version of this project, spanning 1 hour on January 15, 2009, and containing **_21,232 points_**. Note that each of the four implementations of this project uses a different sized dataset (for example, the [Golang](Golang) version uses the same dataset, but spanning 12 hours and contains **_232,051 points_** instead).
+The image below is an example of a visualization of the plotted GPS coordinates of the NYC taxi dataset from the [Java](https://github.com/SamyT-code/Stable-Marriages) version of this project, spanning 1 hour on January 15, 2009, and containing **_21,232 points_**. Note that each of the four implementations of this project uses a different sized dataset (for example, the [Golang](https://github.com/SamyT-code/DBSCAN-Go) version uses the same dataset, but spanning 12 hours and contains **_232,051 points_** instead).
 
 _Disclaimer: Google Maps has a cap at 2,000 markers per layer. As such, not all points are plotted as the dataset contains 21,232 points._
 
@@ -88,7 +88,7 @@ _Disclaimer: Google Maps has a cap at 2,000 markers per layer. As such, not all 
 Since each of the four versions of this project uses a different dataset to match their respective paradigms' strengths, it is evident that they also produce different results.
 
 To view the datasets and results for each programming paradigm, select one of the following options.
-  - [objected-oriented programming (Java)](Java)
-  - [concurrent programming (Golang)](Golang)
-  - [logical programming (Prolog)](Prolog)
-  - [functional programming (Scheme)](Scheme)
+  - [objected-oriented programming (Java)](https://github.com/SamyT-code/Stable-Marriages)
+  - [concurrent programming (Golang)](https://github.com/SamyT-code/DBSCAN-Go)
+  - [logical programming (Prolog)](https://github.com/SamyT-code/DBSCAN-Prolog)
+  - [functional programming (Scheme)](https://github.com/SamyT-code/DBSCAN-Scheme)
